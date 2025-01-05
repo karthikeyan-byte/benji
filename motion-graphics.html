@@ -1,60 +1,324 @@
-<!DOCTYPE html><!-- Last Published: Wed Sep 18 2024 01:14:45 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="60edd6a23d5b20d711706406" data-wf-site="5e1689facb9d5168c0dcbe0b"><head><meta charset="utf-8"/><title>Motion Graphics</title><meta content="Some random videos from my After Effects days." name="description"/><meta content="Motion Graphics" property="og:title"/><meta content="Some random videos from my After Effects days." property="og:description"/><meta content="Motion Graphics" property="twitter:title"/><meta content="Some random videos from my After Effects days." property="twitter:description"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="css/webflow-style.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Karla:regular,italic,700,700italic:latin,latin-ext","Inter:300,regular,500,600,700:latin,latin-ext","IBM Plex Mono:300,regular,italic,500"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="images/favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="images/app-icon.png" rel="apple-touch-icon"/><style>
-	// Remove iOS input field inner shadow
-	.tall-input-field {
-		-webkit-appearance: none;
-	}
+<!DOCTYPE html>
+<!-- Last Published: Wed Sep 18 2024 01:14:45 GMT+0000 (Coordinated Universal Time) -->
+<html
+  data-wf-page="60edd6a23d5b20d711706406"
+  data-wf-site="5e1689facb9d5168c0dcbe0b"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Motion Graphics</title>
+    <meta
+      content="Some random videos from my After Effects days."
+      name="description"
+    />
+    <meta content="Motion Graphics" property="og:title" />
+    <meta
+      content="Some random videos from my After Effects days."
+      property="og:description"
+    />
+    <meta content="Motion Graphics" property="twitter:title" />
+    <meta
+      content="Some random videos from my After Effects days."
+      property="twitter:description"
+    />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="css/webflow-style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Karla:regular,italic,700,700italic:latin,latin-ext",
+            "Inter:300,regular,500,600,700:latin,latin-ext",
+            "IBM Plex Mono:300,regular,italic,500",
+          ],
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/app-icon.png" rel="apple-touch-icon" />
+    <style>
+      // Remove iOS input field inner shadow
+      .tall-input-field {
+        -webkit-appearance: none;
+      }
 
-    // Turn off default iOS dark highlight tap color
-    .tab-toggle-switch {
-      -webkit-tap-highlight-color: rgba(0,0,0,0);
-      tap-highlight-color: rgba(0,0,0,0);
-    }
-  
-</style>
+      // Turn off default iOS dark highlight tap color
+      .tab-toggle-switch {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+    </style>
 
-<!-- Fathom - beautiful, simple website analytics -->
-<script src="https://cdn.usefathom.com/script.js" data-site="ESMOZWVX" defer></script>
-<!-- / Fathom -->
-
-<script>
-
-    // Changing onClick attribute to whenClicked
-    window.onload = function() {
-        var anchors = document.getElementsByTagName('*');
-        for(var i = 0; i < anchors.length; i++) {
-            var anchor = anchors[i];
-            anchor.onclick = function() {
-                code = this.getAttribute('whenClicked');
-                eval(code);   
-            }
+    <script>
+      // Changing onClick attribute to whenClicked
+      window.onload = function () {
+        var anchors = document.getElementsByTagName("*");
+        for (var i = 0; i < anchors.length; i++) {
+          var anchor = anchors[i];
+          anchor.onclick = function () {
+            code = this.getAttribute("whenClicked");
+            eval(code);
+          };
         }
-    }
-    
-    // Scroll to top & track click
-    function scrollAndTrack() {
-      window.scroll({ top: 0, behavior: 'smooth' });
-    }
-  
-</script>
+      };
 
-<style>
-  @keyframes flickerAnimation {
-    0%   { opacity: 1; }
-    10%  { opacity: 0.3; }
-    20%  { opacity: 1; }
-    30%  { opacity: 0.5; }
-    40%  { opacity: 0.5; }
-    50%  { opacity: 1; }
-    60%  { opacity: 0.9; }
-    70%  { opacity: 0.2; }
-    80%  { opacity: 1; }
-    90%  { opacity: 0.7; }
-    100% { opacity: 1; }
-  }
+      // Scroll to top & track click
+      function scrollAndTrack() {
+        window.scroll({ top: 0, behavior: "smooth" });
+      }
+    </script>
 
-  .offline-text {
-    animation: flickerAnimation 5s infinite;
-    text-shadow: 0px 0px 8px rgba(182, 150, 112, 0.5);
-  }
-  
-</style></head><body><div id="top" class="top-of-the-page"></div><div class="menu-holder"><a href="/" class="icon-button w-inline-block"><img src="images/arrowleft.svg" loading="lazy" width="24" height="24" alt="Back Arrow"/></a><a data-w-id="1eebb6ce-b4d0-98b0-73c5-dbab31dfc77f" href="#" class="icon-button w-inline-block"><div data-is-ix2-target="1" class="menu-to-close-icon" data-w-id="1eebb6ce-b4d0-98b0-73c5-dbab31dfc780" data-animation-type="lottie" data-src="images/menu-to-close.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="canvas" data-default-duration="0.6666666666666666" data-duration="0.6666666666666666" data-ix2-initial-state="0"></div></a><div class="menu-container"><a href="/" class="menu-item w-inline-block"><img src="images/house.svg" loading="lazy" width="24" height="24" alt="" class="menu-item-icon"/><div class="menu-item-text">Home</div></a><a href="/about" class="menu-item w-inline-block"><img src="images/user.svg" loading="lazy" width="24" height="24" alt="" class="menu-item-icon"/><div class="menu-item-text">About</div></a></div></div><div class="v-space extra-large"></div><div class="menu-holder case-study-bottom-nav-elements-wrapper"><a href="#" class="bottom-icon-button hidden w-inline-block"><img src="images/arrowleft.svg" loading="lazy" width="24" height="24" alt="Back Arrow"/></a><div data-w-id="19c9b784-251f-d2a0-f3fd-3313a71ec7e3" class="back-to-top-animation-wrapper"><a href="#top" data-w-id="2075c8d4-c8cd-6473-f5c8-9d5972679131" class="bottom-icon-button-teal w-inline-block"><div data-w-id="cdedce1b-f712-ba0f-f4c4-50a8a816b7a5" class="white-scale-down-circle"></div><img src="images/arrowleft.svg" loading="lazy" width="24" height="24" alt="Back Arrow" class="image-2"/><div data-w-id="30a7ec6e-0296-d805-3cdf-343b7d972d0d" data-is-ix2-target="1" class="colored-loader" data-animation-type="lottie" data-src="images/colored-loader.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="10" data-duration="0"></div></a></div></div><div class="single-column-section"><h1>Motion Graphics</h1><p>A video dump of some of my favorite motion graphics I&#x27;ve made. </p><div class="motion-graphics-section"><div class="motion-graphics-embed w-embed w-iframe"><iframe src="https://player.vimeo.com/video/574574774?background=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="motion-graphics-section"><div class="motion-graphics-embed w-embed w-iframe"><iframe src="https://player.vimeo.com/video/574570166?background=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="motion-graphics-section"><div class="motion-graphics-embed w-embed w-iframe"><iframe src="https://player.vimeo.com/video/574575614?background=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="motion-graphics-section"><div class="motion-graphics-embed w-embed w-iframe"><iframe src="https://player.vimeo.com/video/574576800?background=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="motion-graphics-section"><div class="motion-graphics-embed w-embed w-iframe"><iframe src="https://player.vimeo.com/video/574577501?background=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div></div><div class="footer"><div class="social-links-wrapper"><a href="https://twitter.com/olivierifrah" target="_blank" class="social-icon-link w-inline-block"><img src="images/twitter.svg" loading="lazy" alt="Twitter Icon"/></a><a href="http://www.linkedin.com/in/olivierifrah" target="_blank" class="social-icon-link w-inline-block"><img src="images/linkedin.svg" loading="lazy" alt="LinkedIn Icon"/></a><a href="https://dribbble.com/olivierifrah" target="_blank" class="social-icon-link w-inline-block"><img src="images/dribbble.svg" loading="lazy" alt="Dribbble icon"/></a></div><div class="caption">Copyright © 2021 Olivier Ifrah. All rights reserved.</div></div><script src="js/jquery.js" type="text/javascript"  ></script><script src="js/webflow-script.js" type="text/javascript"></script></body></html>
+    <style>
+      @keyframes flickerAnimation {
+        0% {
+          opacity: 1;
+        }
+        10% {
+          opacity: 0.3;
+        }
+        20% {
+          opacity: 1;
+        }
+        30% {
+          opacity: 0.5;
+        }
+        40% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+        }
+        60% {
+          opacity: 0.9;
+        }
+        70% {
+          opacity: 0.2;
+        }
+        80% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 0.7;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .offline-text {
+        animation: flickerAnimation 5s infinite;
+        text-shadow: 0px 0px 8px rgba(182, 150, 112, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top" class="top-of-the-page"></div>
+    <div class="menu-holder">
+      <a href="index" class="icon-button w-inline-block"
+        ><img
+          src="images/arrowleft.svg"
+          loading="lazy"
+          width="24"
+          height="24"
+          alt="Back Arrow" /></a
+      ><a
+        data-w-id="1eebb6ce-b4d0-98b0-73c5-dbab31dfc77f"
+        href="#"
+        class="icon-button w-inline-block"
+        ><div
+          data-is-ix2-target="1"
+          class="menu-to-close-icon"
+          data-w-id="1eebb6ce-b4d0-98b0-73c5-dbab31dfc780"
+          data-animation-type="lottie"
+          data-src="images/menu-to-close.json"
+          data-loop="0"
+          data-direction="1"
+          data-autoplay="0"
+          data-renderer="canvas"
+          data-default-duration="0.6666666666666666"
+          data-duration="0.6666666666666666"
+          data-ix2-initial-state="0"
+        ></div
+      ></a>
+      <div class="menu-container">
+        <a href="index" class="menu-item w-inline-block"
+          ><img
+            src="images/house.svg"
+            loading="lazy"
+            width="24"
+            height="24"
+            alt=""
+            class="menu-item-icon"
+          />
+          <div class="menu-item-text">Home</div></a
+        ><a href="about" class="menu-item w-inline-block"
+          ><img
+            src="images/user.svg"
+            loading="lazy"
+            width="24"
+            height="24"
+            alt=""
+            class="menu-item-icon"
+          />
+          <div class="menu-item-text">About</div></a
+        >
+      </div>
+    </div>
+    <div class="v-space extra-large"></div>
+    <div class="menu-holder case-study-bottom-nav-elements-wrapper">
+      <a href="#" class="bottom-icon-button hidden w-inline-block"
+        ><img
+          src="images/arrowleft.svg"
+          loading="lazy"
+          width="24"
+          height="24"
+          alt="Back Arrow"
+      /></a>
+      <div
+        data-w-id="19c9b784-251f-d2a0-f3fd-3313a71ec7e3"
+        class="back-to-top-animation-wrapper"
+      >
+        <a
+          href="#top"
+          data-w-id="2075c8d4-c8cd-6473-f5c8-9d5972679131"
+          class="bottom-icon-button-teal w-inline-block"
+          ><div
+            data-w-id="cdedce1b-f712-ba0f-f4c4-50a8a816b7a5"
+            class="white-scale-down-circle"
+          ></div>
+          <img
+            src="images/arrowleft.svg"
+            loading="lazy"
+            width="24"
+            height="24"
+            alt="Back Arrow"
+            class="image-2" />
+          <div
+            data-w-id="30a7ec6e-0296-d805-3cdf-343b7d972d0d"
+            data-is-ix2-target="1"
+            class="colored-loader"
+            data-animation-type="lottie"
+            data-src="images/colored-loader.json"
+            data-loop="0"
+            data-direction="1"
+            data-autoplay="0"
+            data-renderer="svg"
+            data-default-duration="10"
+            data-duration="0"
+          ></div
+        ></a>
+      </div>
+    </div>
+    <div class="single-column-section">
+      <h1>Motion Graphics</h1>
+      <p>A video dump of some of my favorite motion graphics I&#x27;ve made.</p>
+      <div class="motion-graphics-section">
+        <div class="motion-graphics-embed w-embed w-iframe">
+          <iframe
+            src="https://player.vimeo.com/video/574574774?background=1"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="motion-graphics-section">
+        <div class="motion-graphics-embed w-embed w-iframe">
+          <iframe
+            src="https://player.vimeo.com/video/574570166?background=1"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="motion-graphics-section">
+        <div class="motion-graphics-embed w-embed w-iframe">
+          <iframe
+            src="https://player.vimeo.com/video/574575614?background=1"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="motion-graphics-section">
+        <div class="motion-graphics-embed w-embed w-iframe">
+          <iframe
+            src="https://player.vimeo.com/video/574576800?background=1"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="motion-graphics-section">
+        <div class="motion-graphics-embed w-embed w-iframe">
+          <iframe
+            src="https://player.vimeo.com/video/574577501?background=1"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="social-links-wrapper">
+        <a
+          href="https://www.instagram.com/tales_by_benny_/"
+          target="_blank"
+          class="social-icon-link w-inline-block"
+          ><img src="images/instagram-svgrepo-com.svg" loading="lazy" alt="Instagram Icon" /></a
+        ><a
+          href="https://www.instagram.com/tales_by_benny_/"
+          target="_blank"
+          class="social-icon-link w-inline-block"
+          ><img
+            src="images/linkedin.svg"
+            loading="lazy"
+            alt="LinkedIn Icon" /></a
+        ><a
+          href="https://wa.me/7338945623"
+          target="_blank"
+          class="social-icon-link w-inline-block"
+          ><img src="images/whatsapp-svgrepo-com.svg" loading="lazy" alt="whatsapp icon"
+        /></a>
+      </div>
+    </div>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/webflow-script.js" type="text/javascript"></script>
+  </body>
+</html>
