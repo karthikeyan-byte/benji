@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!-- Last Published: Wed Sep 18 2024 01:14:45 GMT+0000 (Coordinated Universal Time) -->
+<html
+  data-wf-page="60fb2397c83a185cd328b2f8"
+  data-wf-site="5e1689facb9d5168c0dcbe0b"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Benjamin - Suggested Jobs</title>
+    <meta
+      content="Redesigning job recommendations based on job seeker activity."
+      name="description"
+    />
+    <meta content="Benjamin - Suggested Jobs" property="og:title" />
+    <meta
+      content="Redesigning job recommendations based on job seeker activity."
+      property="og:description"
+    />
+    <meta content="Benjamin - Suggested Jobs" property="twitter:title" />
+    <meta
+      content="Redesigning job recommendations based on job seeker activity."
+      property="twitter:description"
+    />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="css/webflow-style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Karla:regular,italic,700,700italic:latin,latin-ext",
+            "Inter:300,regular,500,600,700:latin,latin-ext",
+            "IBM Plex Mono:300,regular,italic,500",
+          ],
+        },
+      });
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/app-icon.png" rel="apple-touch-icon" />
+    <style>
+      // Remove iOS input field inner shadow
+      .tall-input-field {
+        -webkit-appearance: none;
+      }
+
+      // Turn off default iOS dark highlight tap color
+      .tab-toggle-switch {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+    </style>
+
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script
+      src="https://cdn.usefathom.com/script.js"
+      data-site="ESMOZWVX"
+      defer
+    ></script>
+    <!-- / Fathom -->
+
+    <script>
+      // Changing onClick attribute to whenClicked
+      window.onload = function () {
+        var anchors = document.getElementsByTagName("*");
+        for (var i = 0; i < anchors.length; i++) {
+          var anchor = anchors[i];
+          anchor.onclick = function () {
+            code = this.getAttribute("whenClicked");
+            eval(code);
+          };
+        }
+      };
+
+      // Scroll to top & track click
+      function scrollAndTrack() {
+        window.scroll({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
+    <style>
+      @keyframes flickerAnimation {
+        0% {
+          opacity: 1;
+        }
+        10% {
+          opacity: 0.3;
+        }
+        20% {
+          opacity: 1;
+        }
+        30% {
+          opacity: 0.5;
+        }
+        40% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+        }
+        60% {
+          opacity: 0.9;
+        }
+        70% {
+          opacity: 0.2;
+        }
+        80% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 0.7;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .offline-text {
+        animation: flickerAnimation 5s infinite;
+        text-shadow: 0px 0px 8px rgba(182, 150, 112, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top" class="top-of-the-page"></div>
+    <div class="menu-holder">
+      <a href="/" class="icon-button w-inline-block"
+        ><img
+          src="images/arrowleft.svg"
+          loading="lazy"
+          width="24"
+          height="24"
+          alt="Back Arrow" /></a
+      ><a
+        data-w-id="1eebb6ce-b4d0-98b0-73c5-dbab31dfc77f"
+        href="#"
+        class="icon-button w-inline-block"
+        ><div
+          data-is-ix2-target="1"
+          class="menu-to-close-icon"
+          data-w-id="1eebb6ce-b4d0-98b0-73c5-dbab31dfc780"
+          data-animation-type="lottie"
+          data-src="images/menu-to-close.json"
+          data-loop="0"
+          data-direction="1"
+          data-autoplay="0"
+          data-renderer="canvas"
+          data-default-duration="0.6666666666666666"
+          data-duration="0.6666666666666666"
+          data-ix2-initial-state="0"
+        ></div
+      ></a>
+      <div class="menu-container">
+        <a href="/" class="menu-item w-inline-block"
+          ><img
+            src="images/house.svg"
+            loading="lazy"
+            width="24"
+            height="24"
+            alt=""
+            class="menu-item-icon"
+          />
+          <div class="menu-item-text">Home</div></a
+        ><a href="/about" class="menu-item w-inline-block"
+          ><img
+            src="images/user.svg"
+            loading="lazy"
+            width="24"
+            height="24"
+            alt=""
+            class="menu-item-icon"
+          />
+          <div class="menu-item-text">About</div></a
+        >
+      </div>
+    </div>
+    <div class="menu-holder case-study-bottom-nav-elements-wrapper">
+      <a href="#" class="bottom-icon-button hidden w-inline-block"
+        ><img
+          src="images/arrowleft.svg"
+          loading="lazy"
+          width="24"
+          height="24"
+          alt="Back Arrow"
+      /></a>
+      <div
+        data-w-id="19c9b784-251f-d2a0-f3fd-3313a71ec7e3"
+        class="back-to-top-animation-wrapper"
+      >
+        <a
+          href="#top"
+          data-w-id="2075c8d4-c8cd-6473-f5c8-9d5972679131"
+          class="bottom-icon-button-teal w-inline-block"
+          ><div
+            data-w-id="cdedce1b-f712-ba0f-f4c4-50a8a816b7a5"
+            class="white-scale-down-circle"
+          ></div>
+          <img
+            src="images/arrowleft.svg"
+            loading="lazy"
+            width="24"
+            height="24"
+            alt="Back Arrow"
+            class="image-2" />
+          <div
+            data-w-id="30a7ec6e-0296-d805-3cdf-343b7d972d0d"
+            data-is-ix2-target="1"
+            class="colored-loader"
+            data-animation-type="lottie"
+            data-src="images/colored-loader.json"
+            data-loop="0"
+            data-direction="1"
+            data-autoplay="0"
+            data-renderer="svg"
+            data-default-duration="10"
+            data-duration="0"
+          ></div
+        ></a>
+      </div>
+    </div>
+    <div class="sj-hero-container">
+      <img
+        src="images/suggested-20jobs-20hero-20-20group-2003.png"
+        loading="lazy"
+        sizes="(max-width: 1279px) 81vw, 972px"
+        srcset="
+          images/suggested-20jobs-20hero-20-20group-2003-p-500.png   500w,
+          images/suggested-20jobs-20hero-20-20group-2003-p-800.png   800w,
+          images/suggested-20jobs-20hero-20-20group-2003-p-1080.png 1080w,
+          images/suggested-20jobs-20hero-20-20group-2003-p-1600.png 1600w,
+          images/suggested-20jobs-20hero-20-20group-2003-p-2000.png 2000w,
+          images/suggested-20jobs-20hero-20-20group-2003-p-2600.png 2600w,
+          images/suggested-20jobs-20hero-20-20group-2003.png        2774w
+        "
+        alt="Suggested Jobs third carousel"
+        class="sj-hero-image back"
+      /><img
+        src="images/suggested-20jobs-20hero-20-20group-2002.png"
+        loading="lazy"
+        sizes="(max-width: 767px) 86vw, (max-width: 1279px) 85vw, 1026px"
+        srcset="
+          images/suggested-20jobs-20hero-20-20group-2002-p-500.png   500w,
+          images/suggested-20jobs-20hero-20-20group-2002-p-800.png   800w,
+          images/suggested-20jobs-20hero-20-20group-2002-p-1080.png 1080w,
+          images/suggested-20jobs-20hero-20-20group-2002-p-1600.png 1600w,
+          images/suggested-20jobs-20hero-20-20group-2002-p-2000.png 2000w,
+          images/suggested-20jobs-20hero-20-20group-2002-p-2600.png 2600w,
+          images/suggested-20jobs-20hero-20-20group-2002.png        2774w
+        "
+        alt="Suggested Jobs second carousel"
+        class="sj-hero-image middle"
+      /><img
+        src="images/suggested-20jobs-20hero-20-20group-2001.png"
+        loading="lazy"
+        sizes="(max-width: 1279px) 90vw, 1080px"
+        srcset="
+          images/suggested-20jobs-20hero-20-20group-2001-p-500.png   500w,
+          images/suggested-20jobs-20hero-20-20group-2001-p-800.png   800w,
+          images/suggested-20jobs-20hero-20-20group-2001-p-1080.png 1080w,
+          images/suggested-20jobs-20hero-20-20group-2001-p-1600.png 1600w,
+          images/suggested-20jobs-20hero-20-20group-2001-p-2000.png 2000w,
+          images/suggested-20jobs-20hero-20-20group-2001-p-2600.png 2600w,
+          images/suggested-20jobs-20hero-20-20group-2001.png        2774w
+        "
+        alt="Suggested Jobs first carousel"
+        class="sj-hero-image"
+      />
+    </div>
+    <div class="case-study-header-content">
+      <div class="case-study-title-and-company">
+        <img
+          src="images/ziprecruiter-20small-20logo.png"
+          loading="lazy"
+          alt=""
+          class="company-logo"
+        />
+        <div class="v-space small"></div>
+        <h1>Suggested Jobs</h1>
+        <div class="h-stack">
+          <p class="strong-text">ZipRecruiter</p>
+          <div class="h-space-8px"></div>
+          <p class="strong-text">•</p>
+          <div class="h-space-8px"></div>
+          <p class="strong-text">2020</p>
+        </div>
+      </div>
+      <div class="v-space medium"></div>
+      <div class="intro-role-team">
+        <p class="callout-text">
+          To job seekers, ZipRecruiter had long been known as a job search
+          engine. While our Suggested Jobs page received a lot of traffic, users
+          often complained that they didn’t know why they were being shown
+          certain jobs. Our engineering team also had issues with the page,
+          adding that it was complex and difficult to run tests on. How could we
+          redesign the Suggested Jobs page to give users a stronger sense of
+          clarity and control, while also reducing engineering complexity?
+        </p>
+        <div class="role-team">
+          <div class="role-column">
+            <div class="role-section">
+              <h2 class="small-caps-header">Role</h2>
+              <p class="role-subtitle last-one">Lead Product Designer</p>
+            </div>
+            <div class="role-section last">
+              <h2 class="small-caps-header">Responsibilities</h2>
+              <p class="role-subtitle">UX/UI</p>
+              <p class="role-subtitle">System Design</p>
+              <p class="role-subtitle">Product Strategy</p>
+              <p class="role-subtitle last-one">Prototyping</p>
+            </div>
+          </div>
+          <div class="team-column">
+            <div class="role-section last">
+              <h2 class="small-caps-header">Team</h2>
+              <p class="role-subtitle">Nishok Chetty, Product Manager</p>
+              <p class="role-subtitle">Gerald Burns, Engineer</p>
+              <p class="role-subtitle">James Messrie, Engineer</p>
+              <p class="role-subtitle">Sandra Suttiratana, Engineer</p>
+              <p class="role-subtitle">Mrinalini Garg, Analytics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="v-space large"></div>
+    <div class="callout-container">
+      <h2 class="small-caps-header">Problem</h2>
+      <p class="callout-text">
+        Because our Suggested Jobs page shows mixed job content based on search
+        and application activity, a stray look into a dream job or a search for
+        a friend could instantly dilute a user’s page with seemingly random
+        results.
+      </p>
+    </div>
+    <div class="v-space medium"></div>
+    <div class="full-width-section">
+      <img
+        src="images/suggested-20jobs-20-20mixed-20results-20problem.png"
+        loading="lazy"
+        sizes="(max-width: 479px) 90vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1439px) 85vw, 1200px"
+        srcset="
+          images/suggested-20jobs-20-20mixed-20results-20problem-p-500.png   500w,
+          images/suggested-20jobs-20-20mixed-20results-20problem-p-800.png   800w,
+          images/suggested-20jobs-20-20mixed-20results-20problem-p-1080.png 1080w,
+          images/suggested-20jobs-20-20mixed-20results-20problem-p-1600.png 1600w,
+          images/suggested-20jobs-20-20mixed-20results-20problem.png        1740w
+        "
+        alt="Suggested jobs problem diagram"
+        class="full-width-image"
+      />
+    </div>
+    <div class="single-column-section">
+      <p>
+        Mixing job content also proved to be technically challenging. Because of
+        the complexity, it was difficult to include other types of job content
+        on the page without significant engineering effort. For example, mixing
+        in jobs that the user had previously “saved” could take months of
+        engineering work. Large A/B tests on Suggested Jobs were constantly
+        being descoped or postponed indefinitely. 
+      </p>
+      <p>
+        As a company that prides itself on being data-driven, I also found it
+        uncharacteristic that we never A/B tested our way into mixing job
+        content. We kept this paradigm in place for years based solely on
+        outdated assumptions and an initial lack of user feedback. 
+      </p>
+    </div>
+    <div class="callout-container">
+      <h2 class="small-caps-header">Our Vision</h2>
+      <p class="callout-text">
+        For ZipRecruiter to become a leader in job <em>matching</em>, we needed
+        to help job seekers quickly find jobs they love. We had to ensure
+        suggested job content was easily browsable and easily discoverable, and
+        the Suggested Jobs page was engineered flexibly for painless future
+        iteration.
+      </p>
+    </div>
+    <div class="v-space large"></div>
+    <div class="single-column-section">
+      <h2 class="small-caps-header light">Features</h2>
+      <h3>Grouping Content</h3>
+      <p>
+        By grouping content into horizontal carousels, users can dive deeper
+        into groupings that interest them and easily skip those that don’t. With
+        seemingly endless group types to test in the future, I made sure the
+        group headers were versatile enough to accommodate whatever we wanted. I
+        used subtle cues to differentiate different group types—a square logo to
+        accompany groups based on a specific job and an icon in a circle to
+        signify a broader group. 
+      </p>
+    </div>
+    <div class="html-embed _16-9 w-embed w-iframe">
+      <iframe
+        src="https://player.vimeo.com/video/577429814?background=1"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="caption">Navigating the new Suggested Jobs page.</p>
+    <div class="v-space large"></div>
+    <div class="single-column-section">
+      <h3>Controlling Content</h3>
+      <p>
+        Because group types were partially unpredictable, I had to account for
+        various group-level actions. I created a menu component that was
+        flexible enough to handle different actions, while also serving as a
+        dedicated space for mobile users to read overflow text from longer job
+        titles and locations. Including <em>Dismiss</em> and
+        <em>Not Interested</em> actions for each group gave users control over
+        those that were irrelevant, helping to address their feedback. It also
+        gave our matching team another input to improve our algorithms. 
+      </p>
+    </div>
+    <div class="html-embed _16-9 w-embed w-iframe">
+      <iframe
+        src="https://player.vimeo.com/video/578621119?background=1"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="caption">
+      A closer look at the action menu on desktop and mobile.
+    </p>
+    <div class="v-space large"></div>
+    <div class="full-width-section white-background">
+      <div class="single-column-section">
+        <h2 class="small-caps-header">Research</h2>
+        <p>
+          In late 2019, we introduced a satisfaction widget on every placement
+          that showed job content across the ZipRecruiter ecosystem. It simply
+          asked, “Are you satisfied with these job opportunities?” Satisfied
+          users dismissed the banner with their selection and unsatisfied users
+          were asked a follow up question; “Which of these options best
+          describes your answer?”
+        </p>
+        <p>
+          Results collected from the Suggested Jobs page widget over the course
+          of several months opened our eyes to the problem.
+        </p>
+      </div>
+      <div class="two-column-section top-align">
+        <div class="image-caption">
+          <div class="html-embed narrow w-embed w-iframe">
+            <iframe
+              src="https://player.vimeo.com/video/576831455?background=1"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="caption">
+            A closer look at the satisfaction survey widget.
+          </p>
+        </div>
+        <div class="image-caption">
+          <img
+            src="images/suggested-20jobs-20-20survery-20results.png"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 67vw, (max-width: 991px) 321.0546875px, (max-width: 1279px) 38vw, 423.375px"
+            srcset="
+              images/suggested-20jobs-20-20survery-20results-p-500.png  500w,
+              images/suggested-20jobs-20-20survery-20results-p-800.png  800w,
+              images/suggested-20jobs-20-20survery-20results.png       1129w
+            "
+            alt="Satisfaction survey results"
+            class="satisfaction-graph"
+          />
+          <p class="caption">
+            Satisfaction results submitted on the Suggested Jobs page.
+          </p>
+        </div>
+      </div>
+      <div class="v-space medium"></div>
+      <div class="single-column-section">
+        <p>
+          In an effort to prioritize a Suggested Jobs page redesign, our team
+          followed up by conducting interviews with a panel assembled from
+          unsatisfied users. They confirmed our suspicions and gave us
+          ammunition to convince product management to move forward.
+        </p>
+        <p>
+          After analyzing our direct competitors, I found their suggestion pages
+          were basic and uninspired. I decided to approach competitive research
+          differently, looking more closely at leaders in the digital content
+          space. Products like Netflix and Spotify had elegantly solved a
+          similar content problem and helped guide me towards the almighty card
+          carousel, a powerful way to organize content.
+        </p>
+      </div>
+    </div>
+    <div class="v-space large"></div>
+    <div class="single-column-section">
+      <h2 class="small-caps-header">Opportunity</h2>
+      <p>
+        A Suggested Jobs page redesign presented a massive opportunity for
+        ZipRecruiter.
+        <strong
+          >With over 12% of total job seeker clicks, even small increases in
+          engagement would drastically impact total applications</strong
+        >—a key action that would drive retention of and revenue from employers
+        on the other side of our marketplace. 
+      </p>
+      <p>
+        By creating a flexible system for grouping suggested content, we could
+        leverage the high traffic of Suggested Jobs to increase engagement. All
+        while unblocking future testing and optimization by untangling code
+        complexities in the process.
+      </p>
+    </div>
+    <div class="v-space medium"></div>
+    <div class="full-width-section white-background">
+      <div class="single-column-section">
+        <h2 class="small-caps-header">Exploration</h2>
+        <p>
+          I explored a variety of different ways to display groups, trying out
+          single-row card carousels, list views, multi-row card carousels, mini
+          carousels, and more. I liked a version of the list view and the mini
+          carousels as options to test against the more obvious single-row card
+          carousel, but was constrained by engineering resources, a recent job
+          card redesign, and our compressed timeline. 
+        </p>
+      </div>
+      <img
+        src="images/suggested-20jobs-20-20layout-20explorations.png"
+        loading="lazy"
+        sizes="(max-width: 479px) 90vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1439px) 85vw, 1200px"
+        srcset="
+          images/suggested-20jobs-20-20layout-20explorations-p-500.png   500w,
+          images/suggested-20jobs-20-20layout-20explorations-p-800.png   800w,
+          images/suggested-20jobs-20-20layout-20explorations-p-1080.png 1080w,
+          images/suggested-20jobs-20-20layout-20explorations.png        1419w
+        "
+        alt="Suggested jobs group layout explorations"
+        class="full-width-image"
+      />
+      <div class="v-space large"></div>
+      <div class="single-column-section">
+        <p>
+          Group headers had to be dynamic, so as part of my process, I worked
+          with Nishok to determine the breadth of different groups we might
+          incorporate and explored a framework that could handle each. 
+        </p>
+      </div>
+      <img
+        src="images/suggested-20jobs-20-20group-20header-20anatomy.png"
+        loading="lazy"
+        sizes="(max-width: 479px) 90vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1439px) 85vw, 1200px"
+        srcset="
+          images/suggested-20jobs-20-20group-20header-20anatomy-p-500.png   500w,
+          images/suggested-20jobs-20-20group-20header-20anatomy-p-800.png   800w,
+          images/suggested-20jobs-20-20group-20header-20anatomy-p-1080.png 1080w,
+          images/suggested-20jobs-20-20group-20header-20anatomy-p-1600.png 1600w,
+          images/suggested-20jobs-20-20group-20header-20anatomy.png        1920w
+        "
+        alt="Suggested Jobs group header anatomy"
+        class="full-width-image"
+      />
+      <div class="v-space medium"></div>
+      <div class="single-column-section">
+        <p>
+          I also iterated on how group actions could work, mocking up fly-out
+          menus, bottom drawer menus, and inline actions. We settled on the
+          fly-out menu on desktop and the bottom drawer menu on mobile because
+          of their simplicity and flexibility. 
+        </p>
+      </div>
+      <img
+        src="images/suggested-20jobs-20-20action-20menu-20explorations.png"
+        loading="lazy"
+        sizes="(max-width: 479px) 90vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1439px) 85vw, 1200px"
+        srcset="
+          images/suggested-20jobs-20-20action-20menu-20explorations-p-500.png   500w,
+          images/suggested-20jobs-20-20action-20menu-20explorations-p-800.png   800w,
+          images/suggested-20jobs-20-20action-20menu-20explorations-p-1080.png 1080w,
+          images/suggested-20jobs-20-20action-20menu-20explorations-p-1600.png 1600w,
+          images/suggested-20jobs-20-20action-20menu-20explorations.png        1774w
+        "
+        alt="Suggested jobs action menu explorations"
+        class="full-width-image"
+      />
+      <div class="v-space large"></div>
+      <div class="single-column-section">
+        <p>
+          After gathering feedback from my team and showing Nishok the options,
+          we narrowed in on the single-row card carousel and I began iterating
+          on the carousel micro-interactions for both desktop and mobile. I
+          prototyped and tweaked specifics like paging versus scrolling, dismiss
+          group animations, and menu entrance and exit animations (shown above
+          in the action menu section). 
+        </p>
+      </div>
+      <div class="two-column-section">
+        <div class="image-caption">
+          <div class="html-embed shadow w-embed w-iframe">
+            <iframe
+              src="https://player.vimeo.com/video/578626709?background=1"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="caption-2">Paging</p>
+        </div>
+        <div class="image-caption">
+          <div class="html-embed shadow w-embed w-iframe">
+            <iframe
+              src="https://player.vimeo.com/video/578626728?background=1"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="caption-2">Scrolling</p>
+        </div>
+      </div>
+    </div>
+    <div class="v-space large"></div>
+    <div class="single-column-section">
+      <h2 class="small-caps-header">Results</h2>
+      <p>
+        After working closely with engineering to bring the designs to life, we
+        launched the test and crossed our fingers. At the project’s inception,
+        we documented two primary indicators of success; higher engagement and
+        improved satisfaction. Fortunately, our users found the experience more
+        engaging and satisfying than ever.
+      </p>
+      <p>
+        <strong
+          >We increased clicks on Suggested Jobs by 22%, applications by 8%, and
+          unique users who engaged with Suggested Jobs by 10%. We also lifted
+          satisfaction by 8%.</strong
+        >
+      </p>
+      <p>
+        A win of this magnitude meant not only rolling the designs out to all of
+        our web users, but also clearing the way for our team to test new
+        groups, create a system for how to order groups, and expand the designs
+        to iOS and Android. 
+      </p>
+    </div>
+    <div class="single-column-section">
+      <h2 class="small-caps-header">Summary</h2>
+      <p>
+        By listening to our users and making changes that provided real value to
+        them, we created a dynamic Suggested Jobs page with drastically improved
+        testing capabilities. I grew as a designer and walked away with a few
+        key takeaways:
+      </p>
+      <p>
+        <strong>There is always value in listening to user feedback. </strong
+        >Even if you already know a problem exists, user feedback can help you
+        narrow in on the nuances and can be used to help get the rest of your
+        organization on board. 
+      </p>
+      <p>
+        <strong
+          >Identifying and pursuing low-hanging fruit can be very… fruitful. </strong
+        >Early in the discovery phase, I thought the problem was too obvious for
+        no one to have tried to solve it yet, but I continued forward and
+        learned that, in fact, it was a big problem and a massive opportunity.
+      </p>
+      <p>
+        <strong
+          >Thinking and designing with a systems mindset is a great way to
+          achieve flexibility. </strong
+        >All we really did was turn a grid layout into grouped rows, but by
+        utilizing systems thinking on each level (groups, headers, menus), we
+        created a solution that enabled our product management team to broadly
+        test large-scale hypotheses, while saving our engineering and design
+        teams time. 
+      </p>
+    </div>
+    <div class="v-space large"></div>
+    <div class="footer">
+      <div class="social-links-wrapper">
+        <a
+          href="https://twitter.com/olivierifrah"
+          target="_blank"
+          class="social-icon-link w-inline-block"
+          ><img src="images/twitter.svg" loading="lazy" alt="Twitter Icon" /></a
+        ><a
+          href="http://www.linkedin.com/in/olivierifrah"
+          target="_blank"
+          class="social-icon-link w-inline-block"
+          ><img
+            src="images/linkedin.svg"
+            loading="lazy"
+            alt="LinkedIn Icon" /></a
+        ><a
+          href="https://dribbble.com/olivierifrah"
+          target="_blank"
+          class="social-icon-link w-inline-block"
+          ><img src="images/dribbble.svg" loading="lazy" alt="Dribbble icon"
+        /></a>
+      </div>
+      <div class="caption">
+        Copyright © 2021 Benjamin. All rights reserved.
+      </div>
+    </div>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/webflow-script.js" type="text/javascript"></script>
+  </body>
+</html>
